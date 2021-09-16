@@ -41,7 +41,7 @@ public class UserController {
         return userRepository.save(sysUser);
     }
 
-    @ApiOperation("根据ID查询用户")
+    @ApiOperation("根据ID查询")
 //    @ApiImplicitParam(name = "id", value = "id", required = true)
     @GetMapping(value = "/sysUser/{id}")
     public SysUser getUser(@PathVariable("id") Integer id) {
