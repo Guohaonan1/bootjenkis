@@ -29,13 +29,13 @@ public class UserController {
 //        return "1";
 //    }
 
-    @ApiOperation("查询所有用户")
+    @ApiOperation("查询当前所有用户")
     @GetMapping("/sysUser")
     private List<SysUser> list() {
         return userRepository.findAll();
     }
 
-    @ApiOperation("新增")
+    @ApiOperation("新增用户")
     @PostMapping(value = "/sysUser")
     private SysUser add(SysUser sysUser) {
         return userRepository.save(sysUser);
