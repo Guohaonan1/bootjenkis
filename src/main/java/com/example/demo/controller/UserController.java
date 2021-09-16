@@ -48,7 +48,7 @@ public class UserController {
         return  userRepository.findById(id).orElse(null);
     }
 
-    @ApiOperation("更新")
+    @ApiOperation("更新用户")
     @PutMapping(value = "/sysUser")
     public SysUser updateUser(SysUser sysUser) {
         return userRepository.save(sysUser);
