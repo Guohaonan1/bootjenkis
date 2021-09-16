@@ -35,7 +35,7 @@ public class UserController {
         return userRepository.findAll();
     }
 
-    @ApiOperation("新增user")
+    @ApiOperation("新增us")
     @PostMapping(value = "/sysUser")
     private SysUser add(SysUser sysUser) {
         return userRepository.save(sysUser);
