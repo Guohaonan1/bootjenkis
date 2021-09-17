@@ -29,7 +29,7 @@ public class UserController {
 //        return "1";
 //    }
 
-    @ApiOperation("查询所有xxghnxx用户")
+    @ApiOperation("查询所有xx-ghn-xx用户")
     @GetMapping("/sysUser")
     private List<SysUser> list() {
         return userRepository.findAll();
